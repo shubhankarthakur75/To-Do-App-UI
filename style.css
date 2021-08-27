@@ -1,5 +1,9 @@
 
-/* index */
+/* index.html */
+
+
+
+/* index-header */
 
 .header-container{
     width:55%;
@@ -21,10 +25,13 @@
 .right-header{
     /* border:1px solid red; */
     font-size:30px;
-    padding:20px;
-    width:25%;
+    padding:20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    width:30%;
     height:50%;
 }
+
 
 
 #heading1{
@@ -95,7 +102,7 @@ a{
 }
 
 .tab-heading{
-    padding-top: 15%;
+    padding-top:15%;
     padding-bottom:5px;
     font-size:28px;
     font-weight: 300;
@@ -186,6 +193,30 @@ hr{
 } 
 
 
+.task-back-button{
+    text-align: center;
+}
+
+.back-button{
+    border:none;
+    background-color: white;
+}
+
+
+.back-arrow-image{
+    display: inline-block;
+   vertical-align: middle;
+}
+
+#task-back-button-text{
+    display:inline-block;
+    font-size: 30px;
+    font-weight:400;
+    color:#898282;
+    vertical-align: middle;
+    
+}
+
 
 
 
@@ -201,10 +232,6 @@ hr{
 
 }
 
-.task-main-back-button{
-    text-align: center;
-}
-
 
 .task-main-box{
     width:100%;
@@ -217,8 +244,6 @@ hr{
 
 
 }
-
-
 
 .task-main-box1{
     /* border:1px solid black; */
@@ -263,19 +288,7 @@ hr{
 } 
 
 
-.back-arrow-image{
-    display: inline-block;
-   vertical-align: middle;
-}
 
-#task-back-arrow-button{
-    display:inline-block;
-    font-size: 30px;
-    font-weight:400;
-    color:#898282;
-    vertical-align: middle;
-    
-}
 
 .task-add-image{
     margin-right:15px;
@@ -292,10 +305,6 @@ hr{
     background-color:rgb(34, 33, 33);
 }
 
-.back-button{
-    border:none;
-    background-color: white;
-}
 
 
 
@@ -314,9 +323,9 @@ hr{
 }
 
 .index-background-image{
-    background-image: url("./images/task-background-image.jpg");
+    background-image: url("./images/add-list-background.png");
     height:100vh;
-    background-size: cover;
+    background-size:100% 100vh;
     filter: blur(9px);
     position:absolute;
     top:0px;
@@ -331,7 +340,7 @@ hr{
     border:2px solid #ec7367;
     border-radius: 15px;
     height:220px;
-    width:450px;
+    width:30%;
     font-family: 'Roboto', sans-serif;
     color:#ec7367;
     background-color: white;
@@ -348,7 +357,7 @@ hr{
 
 #add-list-textbox{
     display:block;
-    width:290px;
+    width:75%;
     height:35px;
     margin:auto;
     border:2px solid #ec7367;
@@ -361,7 +370,7 @@ hr{
     border: 1px solid #e74c3c;
     background-color:#e74c3c;
     color:white;
-    font-size: 25px;
+    font-size: 22px;
     border-radius: 25px;
     height:45px;
     width:100px;
@@ -385,10 +394,12 @@ hr{
 
 }
 
-.task-background-image{
-    background-image: url("./images/task-background-image.jpg");
-    height:100vh;
-    background-size: cover;
+.add-item-background-image{
+    background-image: url("./images/add-item-background.jpg");
+    /* height:100vh;
+    width:100vw; */
+    background-size:100% 100vh;
+    background-repeat:no-repeat;
     filter: blur(9px);
     position:absolute;
     top:0px;
@@ -403,7 +414,7 @@ hr{
     border:2px solid #ef9793;
     border-radius: 15px;
     height:220px;
-    width:450px;
+    width:30%;
     font-family: 'Roboto', sans-serif;
     color:#ec7367;
     background-color: white;
@@ -420,7 +431,7 @@ hr{
 
 #add-item-textbox{
     display:block;
-    width:290px;
+    width:75%;
     height:35px;
     margin:auto;
     border:2px solid #ef9793;
@@ -433,13 +444,1198 @@ hr{
     border: 1px solid #e74c3c;
     background-color:#e74c3c;
     color:white;
-    font-size: 25px;
+    font-size: 22px;
     border-radius: 25px;
     height:45px;
     width:100px;
     margin-top:20px;
 
 }
+
+
+
+
+
+
+
+
+/* Responsive Design */
+
+
+
+/* index.html */
+
+
+/* Responsive index.html - For Display size 770px to 1100px */
+
+
+@media screen and (min-width:770px) and (max-width:1134px)
+{  
+    .header-container{
+        width:70%;
+        /* margin:auto;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        border:2px solid black;
+        margin-top: 100px;
+        display:flex;
+        justify-content: space-between; */
+    }  
+    
+    .left-header{
+        /* border:1px solid red; */
+        font-size:23px;
+        padding: 15px 0px 0px 0px;
+    }
+
+
+    .right-header{
+        /* border:1px solid red; */
+        font-size:30px;
+        padding:35px 0px px 0px;
+        display: flex;
+        justify-content: center;
+        width:35%;
+    }
+    
+  
+    /* #heading1{
+        display:inline-block;
+        vertical-align:middle; 
+        margin:5px;
+    }
+    
+    #heading2{
+        display:inline-block;
+        vertical-align:middle; 
+        margin:5px;
+        font-weight: 100;
+        color:darkgray;
+    }
+    
+    #heading3{
+        display:inline-block;
+        margin:5px;
+        font-size: 25px;
+        font-weight:100;
+        color:darkgray;
+        vertical-align:middle; 
+        
+    }
+    
+    .add_image{
+        display: inline-block;
+        vertical-align:middle;   
+        padding:5px;
+        height:50%;
+    }
+    
+    .add-list-button{
+        border:none;
+        background-color: white;
+    }
+    
+    a{
+        text-decoration:none;
+    } */
+
+
+
+
+
+
+    /* index.html-main */
+
+
+    .main-container{
+        /* border:2px solid black; */
+        width:70%;
+        margin:auto;
+        margin-top: 30px;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .tab{
+        /* display: inline-block; */
+        width:29%;
+        height:300px;
+        /* text-align: center;
+        border:2px solid #f18585;
+        border-radius: 10px;
+        box-shadow:5px 5px 12px #b8bec3; */
+
+    }
+
+    .tab-heading{
+        /* padding-top: 15%;
+        padding-bottom:5px; */
+        font-size:25px;
+        /* font-weight: 300;
+        color:#f18585; */
+    }
+
+    .tab-status{
+        /* padding-top:15%; */
+        font-size:20px;
+        /* font-weight:300px;
+        color:red; */
+    }
+
+    .pending-task-checkbox{
+        /* color:black; */
+        margin:20px 10px;
+        font-size: 17px;
+    }
+
+    .checkbox-size{
+        height:17px;
+        width:17px;
+        margin:8px 8px 8px 6px;
+    } 
+
+    hr{
+        width:80%;
+        margin-right: 0px;  
+        background-color:darkgray;
+    }
+  
+}
+
+/* End-@media screen and (min-width:770px) and (max-width:1134px) */
+
+
+
+
+
+
+
+
+/* Responsive index.html - For screen-size 300px to 770px (index.html)*/
+
+@media screen and (min-width:359px) and (max-width:770px)
+ {
+
+    .header-container{
+        width:95%;
+        /* margin:auto;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        border:2px solid black; */
+        margin-top: 50px;
+        /* display:flex;
+        justify-content: space-between; */
+    }
+    
+    .left-header{
+        /* border:1px solid red; */
+        font-size:22px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left:3%;
+        width:75%;
+    }
+    
+    .right-header{
+        /* border:1px solid red;
+        font-size:30px; */
+        /* padding:25px 0px 20px 0px; */
+        display:flex;
+        flex-direction:column;
+        justify-content: right;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        padding-right:3%;
+        /* display: flex;
+        justify-content: center; */
+        width:20%;
+    }
+
+    .right-header div{
+        text-align: right;
+    }
+
+    .right-header button{
+        padding:0px;
+    }
+
+    #heading1{
+        /* display:inline-block;
+        vertical-align:middle;  */
+        margin:2px;
+    }
+    
+    #heading2{
+        /* display:inline-block;
+        vertical-align:middle;  */
+        margin:2px;
+        /* font-weight: 100;
+        color:darkgray; */
+    }
+    
+    #heading3{
+        display:none;
+        /* margin:5px;
+        font-size: 30px;
+        font-weight:100;
+        color:darkgray;
+        vertical-align:middle;  */
+        
+    }
+    
+    .add_image{
+        /* display: inline-block;
+        vertical-align:middle;    */
+        padding:0px;
+        /* height:50%; */
+    }
+    
+    /* .add-list-button{
+        border:none;
+        background-color: white;
+    }
+    
+    a{
+        text-decoration:none;
+    } */
+    
+
+
+
+    /* Responsive index.html-main */
+
+
+    .main-container{
+        /* border:2px solid black; */
+        width:95%;
+        /* margin:auto;
+        margin-top: 30px;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif; */
+        display:flex;
+        flex-direction:column;
+        padding-left:3%;
+        padding-right:3%;
+        justify-content: space-evenly;
+    }
+
+    .tab{
+        /* display: inline-block; */
+        width:93%;
+        height:auto;
+        /* text-align: center; */
+        border:2px solid #f18585;
+        /* border-radius: 10px; */
+        box-shadow:5px 5px 12px #b8bec3;
+        margin:15px;
+        text-align: left;
+        
+
+    }
+
+    .tab-heading{
+        padding-top:13px;
+        padding-bottom:13px;
+        font-size:25px;
+        font-weight: 400;
+        color:#b4a5a3;
+        padding-left: 7%;
+    }
+
+    .tab-status{
+        display:none;
+        /* padding-top:15%;
+        font-size:23px;
+        font-weight:300px;
+        color:red; */
+    }
+
+    .pending-task-checkbox{
+        display:none;
+        /* color:black;
+        margin:15px;
+        font-size: 21px; */
+    }
+
+    .checkbox-size{
+        display:none;
+        /* height:20px;
+        width:20px;
+        margin:15px; */
+    } 
+
+    hr{
+        display:none;
+        /* width:80%;
+        margin-right: 0px;  
+        background-color:darkgray; */
+    }
+
+}
+
+/* End @media screen and (min-width:359px) and (max-width:770px) */
+
+
+
+
+
+
+
+/*Responsive task.html */
+
+
+
+/* Responsive Task.html - For screen-size 900px to 1450px */
+
+@media screen and (min-width:900px) and (max-width:1450px)
+{
+    
+    .task-header-container{
+        width:52%;
+        /* margin:auto;
+        border:2px solid red;
+        box-sizing: border-box; */
+        display:flex;
+        justify-content: center;
+        /* font-family: 'Roboto', sans-serif;
+        margin-top: 40px; */
+    
+    }
+    
+    .task-heading-left-box{
+        /* border:1px solid black; */
+        width: 20%;
+        /* display:flex;
+        align-items: center; */
+    }
+    
+    .task-heading-middle-box{
+        /* border:1px solid black; */
+        width: 270px;
+        font-size:140%;
+        /* text-align: center;
+        padding:5px; */
+    }
+    
+    .task-heading-right-box{
+        /* border:1px solid black; */
+        width: 20%;
+        /* display:flex;
+        align-items: center; */
+    }
+    
+    /* #hr-left{
+        width:90%;
+        margin-right: 0px;
+        background-color:darkgray;
+    } */
+    
+    /* #hr-right{
+        width:90%;
+        margin-left: 0px; 
+        background-color:darkgray;
+    } */
+
+
+    /* .back-button{
+        border:none;
+        background-color: white;
+    } */
+    
+    .back-arrow-image{
+        /* display: inline-block;
+       vertical-align: middle; */
+       height:30px;
+       width:30px;
+    }
+    
+    #task-back-button-text{
+        /* display:inline-block; */
+        font-size: 25px;
+        /* font-weight:400;
+        color:#898282;
+        vertical-align: middle; */     
+    }
+
+
+
+
+    /* task.html-main  */
+
+
+    .task-main-container{
+        /* border:2px solid red; */
+        width:25%;
+        /* margin:auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 5px; */
+    
+    }
+    
+    /* .task-back-button{
+        text-align: center;
+    } */
+
+
+    
+    .task-main-box{
+        /* width:100%; */
+        height:320px;
+        /* border: 2px solid #f18585;
+        box-shadow:5px 5px 12px #b8bec3;
+        border-radius: 15px;
+        padding-top:20px;
+        margin-top:25px;   */
+    
+    }
+    
+    
+    .task-main-box1{
+        /* border:1px solid black; */
+        /* text-align: center; */
+        padding:10px;
+        font-size:27px;
+        /* font-weight: 400;
+        color:#e85141; */
+    
+    }
+    
+    .task-main-box2{
+        /* border:1px solid black; */
+        /* text-align: center;
+        padding-top:5%; */
+        font-size:22px;
+        /* font-weight:300px;
+        color:red; */
+       
+    }
+     
+    .task-main-box3{
+        /* color:black;
+        margin:15px; */
+        font-size: 20px;
+        margin-left:10px;
+        text-align: center;
+    }
+
+    .checkbox-size{
+        height:18px;
+        width:18px;
+        /* margin:15px; */
+    } 
+    
+    .task-main-box4{
+        /* display: flex;
+        justify-content:flex-end; */
+        padding-top:80px;
+    }
+    
+    
+    .task-add-image{
+        /* margin-right:15px; */
+        height:35px;
+        width:35px;
+    }
+    
+    /* .add-button{
+        border:none;
+        background-color:white;
+    } */
+    
+    /* .task-hr{
+        width:80%;
+        margin-right:0px;  
+        background-color:rgb(34, 33, 33);
+    } */
+      
+}
+
+/* End @media screen and (min-width:900px) and (max-width:1450px) */
+
+
+
+/* Responsive Task.html- For screen-size 600px to 900px */
+
+@media screen and (min-width:600px) and (max-width:900px)
+    {
+        
+        .task-header-container{
+            width:90%;
+            /* margin:auto;
+            border:2px solid red;
+            box-sizing: border-box; */
+            display:flex;
+            justify-content: center;
+            /* font-family: 'Roboto', sans-serif;
+            margin-top: 40px; */
+        
+        }
+        
+        .task-heading-left-box{
+            /* border:1px solid black; */
+            width: 20%;
+            /* display:flex;
+            align-items: center; */
+        }
+        
+        .task-heading-middle-box{
+            /* border:1px solid black; */
+            width: 270px;
+            font-size:130%;
+            /* text-align: center; */
+            padding:0px;
+        }
+        
+        .task-heading-right-box{
+            /* border:1px solid black; */
+            width: 20%;
+            /* display:flex;
+            align-items: center; */
+        }
+        
+
+        #task-heading
+        {
+            margin:5px 0px 5px 0px;
+            padding:5px 0px 5px 0px;
+        } 
+
+
+        #hr-left{
+            display:inline-block;
+            width:80%;
+            /* margin-right: 0px;
+            background-color:darkgray; */
+        }
+        
+        #hr-right{
+            display:inline-block;
+            width:80%;
+            /* margin-left: 0px; 
+            background-color:darkgray; */
+        }
+    
+    
+        /* .back-button{
+            border:none;
+            background-color: white;
+        } */
+        
+        .back-arrow-image{
+            /* display: inline-block;
+           vertical-align: middle; */
+           height:30px;
+           width:30px;
+        }
+        
+        #task-back-button-text{
+            /* display:inline-block; */
+            font-size: 25px;
+            /* font-weight:400;
+            color:#898282;
+            vertical-align: middle; */     
+        }
+
+
+        /* task.html-main */
+
+        .task-main-container{
+            /* border:2px solid red; */
+            width:36%;
+            /* margin:auto;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 5px; */
+        
+        }
+        
+        
+        .task-main-box{
+            /* width:100%; */
+            height:320px;
+            /* border: 2px solid #f18585;
+            box-shadow:5px 5px 12px #b8bec3;
+            border-radius: 15px;
+            padding-top:20px;
+            margin-top:25px; */
+        
+        
+        }
+        
+        /* .task-main-box1{
+            border:1px solid black;
+            text-align: center;
+            padding:15px;
+            font-size:28px;
+            font-weight: 400;
+            color:#e85141;
+        
+        } */
+        
+        /* .task-main-box2{
+            border:1px solid black;
+            text-align: center;
+            padding-top:5%;
+            font-size:23px;
+            font-weight:300px;
+            color:red;
+           
+        } */
+        
+        
+        .task-main-box3{
+            /* color:black;
+            margin:15px;
+            /* font-size: 22px; */ 
+            margin-left:15%;
+            margin-right:10px;
+        }
+        
+        .task-main-box4{
+            display: flex;
+            justify-content:flex-end;
+            padding-top:70px;
+        }
+        
+        .checkbox-size{
+            display: inline-block;
+            height:18px;
+            width:18px;
+            margin-right:10px;
+            margin-left:0px;
+        } 
+
+        .task-main-box4{
+            /* display: flex;
+            justify-content:flex-end; */
+            padding-top:70px;
+        }
+        
+        
+        .task-add-image{
+            /* margin-right:15px; */
+            height:35px;
+            width:35px;
+        
+        }
+        
+        /* .add-button{
+            border:none;
+            background-color:white;
+        } */
+        
+        .task-hr{
+            display:block;
+            /* width:80%;
+            margin-right:0px;  
+            background-color:rgb(34, 33, 33); */
+        }     
+    }
+/* End @media screen and (min-width:600px) and (max-width:900px) */
+
+
+
+
+
+/* Responsive Task-html- For screen-size 360px to 600px */
+
+@media screen and (min-width:350px) and (max-width:600px)
+{
+
+
+    .task-header-container{
+        width:100%;
+        /* margin:auto;
+        border:2px solid red;
+        box-sizing: border-box;
+        display:flex;
+        justify-content: space-between;
+        font-family: 'Roboto', sans-serif; */
+        text-align: left;
+        margin-top: 18px;
+    
+    }
+    
+    .task-heading-left-box{
+        display:none;
+        /* border:1px solid black; */
+        /* width: 30%;
+        display:flex;
+        align-items: center; */
+    }
+    
+    .task-heading-middle-box{
+        /* border:1px solid black; */
+        width: 100%;
+        font-size:18px;
+        text-align:center;
+        padding:25px;
+    }
+    
+    .task-heading-right-box{
+        display:none;
+        /* border:1px solid black; */
+        /* width: 30%;
+        display:flex;
+        align-items: center; */
+    }
+    
+    /* #hr-left{
+        display:none;
+        width:90%;
+        margin-right: 0px;
+        background-color:darkgray;
+    } */
+    
+    /* #hr-right{
+        width:90%;
+        margin-left: 0px; 
+        background-color:darkgray;
+    } */
+    
+
+    #task-heading
+    {
+        margin:5px;
+        padding:5px;
+    } 
+
+    .task-back-button{
+        text-align: center;
+        position:fixed;
+        top:52px;
+        right:80%;
+    }
+        
+    .back-arrow-image{
+        display: inline-block;
+        vertical-align: middle;
+        height:35px;
+        width:35px;
+    }
+
+    #task-back-button-text{
+        display:none;
+        /* display:inline-block;
+        font-size: 30px;
+        font-weight:400;
+        color:#898282;
+        vertical-align: middle; */
+        
+    }
+
+
+
+
+    /* task-main */
+
+    .task-main-container{
+        /* border:2px solid red; */
+        width:260px;
+        /* margin:auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 5px;
+        align-items: center; */
+    
+    }
+
+    
+    /* .task-main-box{
+        width:100%;
+        height:350px;
+        border: 2px solid #f18585;
+        box-shadow:5px 5px 12px #b8bec3;
+        border-radius: 15px;
+        padding-top:20px;
+        margin-top:25px;
+    } */
+    
+
+    /* .task-main-box1{
+        border:1px solid black;
+        text-align: center;
+        padding:15px;
+        font-size:28px;
+        font-weight: 400;
+        color:#e85141;
+    } */
+    
+    .task-main-box2{
+        /* border:1px solid black;
+        text-align: center;
+        padding-top:5%; */
+        font-size:21px;
+        /* font-weight:300px;
+        color:red; */
+       
+    }
+    
+    
+    .task-main-box3{
+        /* color:black; */
+        margin:20px;
+        font-size: 21px;
+        margin-left:20%;
+    }
+    
+    .task-main-box4{
+        /* display: flex;
+        justify-content:flex-end; */
+        padding-top:100px;
+    }
+    
+    .checkbox-size{
+        display: inline-block;
+        height:20px;
+        width:20px;
+        margin:10px;
+    } 
+    
+    
+    
+    
+    .task-add-image{
+        /* margin-right:15px; */
+        height:40px;
+        width:40px;
+    }
+    
+    /* .add-button{
+        border:none;
+        background-color:white;
+    } */
+    
+    /* .task-hr{
+        width:80%;
+        margin-right:0px;  
+        background-color:rgb(34, 33, 33);
+    } */
+
+}
+/* End @media screen and (min-width:350px) and (max-width:600px) */
+
+
+
+
+
+
+
+/* Responsive add-list.html */
+
+
+/* Responsive add-list.html for screen-size 600px to 100px */
+
+@media  screen and (min-width:600px) and (max-width:1000px)
+ {
+    
+
+    /* .add-list-container{
+        height:100%;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    } */
+    
+    .index-background-image{
+        background-image: url("./images/Responsive-add-list-background\(600px-1000px.png");
+        /* height:100vh;
+        background-size:100% 100vh;
+        filter: blur(9px);
+        position:absolute;
+        top:0px;
+        right:0px;
+        bottom:0px;
+        left:0px; */
+    
+    }
+    
+    
+    .add-new-list{
+        /* border:2px solid #ec7367;
+        border-radius: 15px;
+        height:220px; */
+        width:46%;
+        /* font-family: 'Roboto', sans-serif;
+        color:#ec7367;
+        background-color: white;
+        font-weight: 5px;
+        font-size:22px;
+        text-align: center;
+        padding:30px;
+        box-sizing: border-box;
+        box-shadow:5px 5px 12px #b8bec3;
+        position:relative;
+        z-index: +1; */
+    
+    }
+    
+    #add-list-textbox{
+        /* display:block; */
+        /* width:85%;
+        height:35px;
+        margin:auto;
+        border:2px solid #ec7367;
+        border-radius: 5px; */
+        margin-top:20px;
+    }
+    
+    #add-list-add-button{
+        /* margin:10px;
+        border: 1px solid #e74c3c;
+        background-color:#e74c3c;
+        color:white;
+        font-size: 22px;
+        border-radius: 25px; */
+        height:40px;
+        width:90px;
+        /* margin-top:20px; */
+    }
+}
+/* End @media  screen and (min-width:600px) and (max-width:1000px) */
+
+
+
+/* Responsive add-list.html for screen-size 300px-600px */
+
+@media screen and (min-width:300px) and (max-width:600px) 
+{
+    
+    /* .add-list-container{
+        height:100%;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    } */
+    
+    .index-background-image{
+        background-image: url("./images/Responsive-add-list-background\(300px-600px\).png");
+   
+        background-size:100% 100vh;
+        filter: blur(9px);
+        /* position:absolute;
+        top:0px;
+        right:0px;
+        bottom:0px;
+        left:0px; */
+    
+    }
+    
+    
+    .add-new-list{
+        /* border:2px solid #ec7367;
+        border-radius: 15px; */
+        height:200px;
+        width:80%;
+        /* font-family: 'Roboto', sans-serif;
+        color:#ec7367;
+        background-color: white;
+        font-weight: 5px;
+        font-size:22px;
+        text-align: center;
+        padding:30px;
+        box-sizing: border-box;
+        box-shadow:5px 5px 12px #b8bec3;
+        position:relative;
+        z-index: +1; */
+    
+    }
+    
+    #add-list-textbox{
+        /* display:block; */
+        width:85%;
+        /* height:35px;
+        margin:auto;
+        border:2px solid #ec7367;
+        border-radius: 5px; */
+        margin-top:20px;
+    }
+    
+    #add-list-add-button{
+        margin:15px;
+        /* border: 1px solid #e74c3c;
+        background-color:#e74c3c;
+        color:white; */
+        font-size: 20px;
+        /* border-radius: 25px; */
+        height:35px;
+        width:90px;
+        /* margin-top:20px; */
+    }
+}
+/* End @media screen and (min-width:300px) and (max-width:600px)  */
+
+
+
+
+
+
+/* Responsive add-item.html */
+
+
+@media  screen and (min-width:600px) and (max-width:1000px)
+{
+
+    /* .add-item-container{
+        height:100%;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    } */
+    
+    .add-item-background-image{
+        background-image: url("./images/Responsive-add-item-background\(600px-1000px\).png");
+        /* background-size:100% 100vh;
+        background-repeat:no-repeat;
+        filter: blur(9px);
+        position:absolute;
+        top:0px;
+        right:0px;
+        bottom:0px;
+        left:0px; */
+    
+    }
+    
+    
+    .add-new-item{
+        /* border:2px solid #ef9793;
+        border-radius: 15px;
+        height:220px; */
+        width:46%;
+        /* font-family: 'Roboto', sans-serif;
+        color:#ec7367;
+        background-color: white;
+        font-weight: 5px;
+        font-size:22px;
+        text-align: center;
+        padding:30px;
+        box-sizing: border-box;
+        box-shadow:5px 5px 12px #b8bec3;
+        position:relative;
+        z-index: +1; */
+    
+    }
+    
+    #add-item-textbox{
+        /* display:block; */
+        /* width:85%;
+        height:35px;
+        margin:auto;
+        border:2px solid #ef9793;
+        border-radius: 5px; */
+        margin-top:20px;
+    }
+    
+    #add-item-add-button{
+        /* margin:10px;
+        border: 1px solid #e74c3c;
+        background-color:#e74c3c;
+        color:white;
+        font-size: 22px;
+        border-radius: 25px; */
+        height:40px;
+        width:90px;
+        /* margin-top:20px; */
+    
+    }
+}
+/* End @media  screen and (min-width:600px) and (max-width:1000px) */
+
+
+
+/* Responsive add-itemt.html for screen-size 300px-600px */
+
+@media screen and (min-width:300px) and (max-width:600px) 
+{
+
+    /* .add-item-container{
+        height:100%;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    } */
+    
+    .add-item-background-image{
+        background-image: url("./images/Responsive-add-item-background\(300px-600px\).png");
+        /* background-size:100% 100vh;
+        background-repeat:no-repeat;
+        filter: blur(9px);
+        position:absolute;
+        top:0px;
+        right:0px;
+        bottom:0px;
+        left:0px; */
+    
+    }
+    
+    
+    .add-new-item{
+        /* border:2px solid #ef9793;
+        border-radius: 15px; */
+        height:200px;
+        width:80%;
+        /* font-family: 'Roboto', sans-serif;
+        color:#ec7367;
+        background-color: white;
+        font-weight: 5px;
+        font-size:22px;
+        text-align: center;
+        padding:30px;
+        box-sizing: border-box;
+        box-shadow:5px 5px 12px #b8bec3;
+        position:relative;
+        z-index: +1; */
+    
+    }
+    
+    #add-item-textbox{
+        /* display:block; */
+        /* width:85%;
+        height:35px;
+        margin:auto;
+        border:2px solid #ef9793;
+        border-radius: 5px; */
+        margin-top:20px;
+    }
+    
+    #add-item-add-button{
+        margin:15px;
+        /* border: 1px solid #e74c3c;
+        background-color:#e74c3c;
+        color:white; */
+        font-size: 20px;
+        /* border-radius: 25px; */
+        height:35px;
+        width:90px;
+        /* margin-top:20px; */
+    
+    }
+}
+
+/* End @media screen and (min-width:300px) and (max-width:600px)
+
+
 
 
 
